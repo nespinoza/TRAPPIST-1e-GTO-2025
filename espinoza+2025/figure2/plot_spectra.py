@@ -133,7 +133,7 @@ for name, date in zip(['003', '001', '104', '002'], ['June 22', 'June 28', 'July
 #           mode='expand', borderaxespad=0, ncol=5, fontsize = 30, frameon=False)
 
 plt.tight_layout()
-plt.savefig('tspectra_ne.pdf',
+plt.savefig('tspectra.pdf',
             dpi=250,#, rasterize=True,
             #transparent=True,
             bbox_inches='tight')
