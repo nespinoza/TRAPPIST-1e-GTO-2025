@@ -9,9 +9,9 @@ for i in [1, 2, 3, 4]:
     ws,ds,derrs = np.loadtxt('stevenson/visit'+str(i)+'.txt', unpack = True, usecols = (0, 3, 4))
     wg,dg,derrg = np.loadtxt('grant/visit'+str(i)+'.txt', unpack = True, usecols = (0, 3, 4))
 
-    d = d#-np.nanmedian(d)
-    ds = ds#-np.nanmedian(ds)
-    dg = dg#-np.nanmedian(dg)
+    d = d-np.nanmedian(d)
+    ds = ds-np.nanmedian(ds)
+    dg = dg-np.nanmedian(dg)
 
     residuals = d - ds
     residual_err = np.sqrt(derr**2 + derrs**2)
